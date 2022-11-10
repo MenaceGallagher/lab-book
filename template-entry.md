@@ -3,17 +3,16 @@ Document Owner:Menace Gallagher
 GitRepo:MenaceGallagher/lab-book
 -->
 <!--Title-->
-#Title
+# Title
 
 <!--Dataset Info-->
-ProgramName:	XXXX<br />
-ProgramVer:		XXXX.0.1<br />
-Dataset:		Dataset Name Here<br />
-RAW:			XXXX.raw<br />
-FASTA:			-XXXX.fasta<br />
-				-XXXX.fasta<br />
-SPECLIB:		Generated from FASTA<br />
-LOG:			([./log/XXXX.log.txt])<br />
+-ProgramName:	XXXX<br />
+-ProgramVer:		XXXX.0.1<br />
+-Dataset:		Dataset Name Here<br />
+-RAWs:			XXXX.raw<br />
+-FASTA:			XXXX.fasta, XXXX.fasta<br />
+-SPECLIB:		Generated from FASTA<br />
+-LOG:			([./log/XXXX.log.txt])<br />
 
 
 <!--Reporting-->
@@ -30,4 +29,4 @@ LOG:			([./log/XXXX.log.txt])<br />
 
 </p></details>
 
-##Summary: <br /> 
+## Summary: <br /> 
