@@ -1,0 +1,115 @@
+DIA-NN 1.8.1 (Data-Independent Acquisition by Neural Networks)
+Compiled on Apr 14 2022 15:31:19
+Current date and time: Wed Nov  9 17:30:58 2022
+CPU: GenuineIntel Intel(R) Xeon(R) CPU E5-2690 v4 @ 2.60GHz
+SIMD instructions: AVX SSE4.1 SSE4.2 
+Logical CPU cores: 24
+Full UniMod modification database loaded; DIA-NN will not attempt to convert library modifications to the UniMod format
+diann.exe --f R:\GlyMass\Menace\PXD02660_Raws\RD139_Raw_files_DIA_Narrow\RD139_Narrow_UPS1_25fmol_inj1.raw  --lib  --threads 24 --verbose 1 --out R:\GlyMass\Menace\Output_DIA-NN\Troubleshooting Runs\Run6_20221109\report.tsv --qvalue 0.01 --matrices --temp R:\GlyMass\Menace\Output_DIA-NN\Troubleshooting Runs\Run6_20221109\temp --out-lib R:\GlyMass\Menace\Output_DIA-NN\Troubleshooting Runs\Run6_20221109\lib\lib.tsv --gen-spec-lib --predictor --fasta R:\GlyMass\Menace\FASTAs\shortstuff.fasta --fasta R:\GlyMass\Menace\FASTAs\UP000000625_83333.fasta --fasta-search --min-fr-mz 200 --max-fr-mz 1800 --met-excision --cut K*,R* --missed-cleavages 2 --min-pep-len 7 --max-pep-len 30 --min-pr-mz 300 --max-pr-mz 1800 --min-pr-charge 1 --max-pr-charge 4 --unimod4 --var-mods 5 --var-mod UniMod:35,15.994915,M --var-mod UniMod:1,42.010565,*n --monitor-mod UniMod:1 --relaxed-prot-inf --smart-profiling --peak-center --no-ifs-removal --full-unimod  --var-mods 10  --var-mod Unimod:295,146.057909,N,N-glycan  --var-mod Unimod:41,162.052824,N,N-glycan  --var-mod Unimod:43,203.07937,N,N-glycan  --var-mod Unimod:143,406.158745,N,N-glycan  --var-mod Unimod:137,1217.0880,N,N-glycan  --var-mod Unimod:1465,1378.475686,N,N-glycan  --monitor-mod Unimod:295  --monitor-mod Unimod:41  --monitor-mod Unimod:43  --monitor-mod Unimod:143  --monitor-mod Unimod:137  --monitor-mod Unimod:1465   
+
+Thread number set to 24
+Output will be filtered at 0.01 FDR
+Precursor/protein x samples expression level matrices will be saved along with the main report
+A spectral library will be generated
+Deep learning will be used to generate a new in silico spectral library from peptides provided
+Library-free search enabled
+Min fragment m/z set to 200
+Max fragment m/z set to 1800
+N-terminal methionine excision enabled
+In silico digest will involve cuts at K*,R*
+Maximum number of missed cleavages set to 2
+Min peptide length set to 7
+Max peptide length set to 30
+Min precursor m/z set to 300
+Max precursor m/z set to 1800
+Min precursor charge set to 1
+Max precursor charge set to 4
+Cysteine carbamidomethylation enabled as a fixed modification
+Maximum number of variable modifications set to 5
+Modification UniMod:35 with mass delta 15.9949 at M will be considered as variable
+Modification UniMod:1 with mass delta 42.0106 at *n will be considered as variable
+Highly heuristic protein grouping will be used, to reduce the number of protein groups obtained; this mode is recommended for benchmarking protein ID numbers; use with caution for anything else
+When generating a spectral library, in silico predicted spectra will be retained if deemed more reliable than experimental ones
+Fixed-width center of each elution peak will be used for quantification
+Interference removal from fragment elution curves disabled
+Maximum number of variable modifications set to 10
+Modification Unimod:295 with mass delta 146.058 at N will be considered as variable
+Modification Unimod:41 with mass delta 162.053 at N will be considered as variable
+Modification Unimod:43 with mass delta 203.079 at N will be considered as variable
+Modification Unimod:143 with mass delta 406.159 at N will be considered as variable
+Modification Unimod:137 with mass delta 1217.09 at N will be considered as variable
+Modification Unimod:1465 with mass delta 1378.48 at N will be considered as variable
+WARNING: only the first 5 variable modifications specified will be searched for
+DIA-NN will optimise the mass accuracy automatically using the first run in the experiment. This is useful primarily for quick initial analyses, when it is not yet known which mass accuracy setting works best for a particular acquisition scheme.
+Exclusion of fragments shared between heavy and light peptides from quantification is not supported in FASTA digest mode - disabled; to enable, generate an in silico predicted spectral library and analyse with this library
+The following variable modifications will be scored: UniMod:1 Unimod:295 Unimod:41 Unimod:43 
+
+1 files will be processed
+[0:00] Loading FASTA R:\GlyMass\Menace\FASTAs\shortstuff.fasta
+[0:00] Loading FASTA R:\GlyMass\Menace\FASTAs\UP000000625_83333.fasta
+[98:36] Processing FASTA
+[124:24] Assembling elution groups
+[132:58] 13337797 precursors generated
+[132:58] Gene names missing for some isoforms
+[132:58] Library contains 4394 proteins, and 4394 genes
+[132:59] [133:28] [162:00] [165:06] [165:09] [165:16] Saving the library to R:\GlyMass\Menace\Output_DIA-NN\Troubleshooting Runs\Run6_20221109\lib\lib.predicted.speclib
+[187:31] Initialising library
+
+[187:42] File #1/1
+[187:42] Loading run R:\GlyMass\Menace\PXD02660_Raws\RD139_Raw_files_DIA_Narrow\RD139_Narrow_UPS1_25fmol_inj1.raw
+[188:55] 5142120 library precursors are potentially detectable
+[188:57] Processing...
+[190:52] RT window set to 5.663
+[190:52] Peak width: 3.712
+[190:52] Scan window radius set to 8
+[190:53] Recommended MS1 mass accuracy setting: 6.86315 ppm
+[192:55] Optimised mass accuracy: 17.0196 ppm
+[195:23] Removing low confidence identifications
+[195:24] Searching PTM decoys
+[196:18] Removing interfering precursors
+[196:20] Training neural networks: 48889 targets, 29595 decoys
+[196:28] Number of IDs at 0.01 FDR: 24253
+[196:29] Calculating protein q-values
+[196:30] Number of genes identified at 1% FDR: 2244 (precursor-level), 2048 (protein-level) (inference performed using proteotypic peptides only)
+[196:30] Quantification
+[196:31] Precursors with monitored PTMs at 1% FDR: 0 out of 15
+[196:31] Unmodified precursors with monitored PTM sites at 1% FDR: 0 out of 8632
+[196:31] Precursors with PTMs localised (when required) with > 90% confidence: 0 out of 0
+[196:40] Quantification information saved to R:\GlyMass\Menace\Output_DIA-NN\Troubleshooting Runs\Run6_20221109\temp/R__GlyMass_Menace_PXD02660_Raws_RD139_Raw_files_DIA_Narrow_RD139_Narrow_UPS1_25fmol_inj1_raw.quant.
+
+[196:42] Cross-run analysis
+[196:42] Reading quantification information: 1 files
+[196:45] Quantifying peptides
+[196:47] Assembling protein groups
+[196:57] Quantifying proteins
+[196:58] Calculating q-values for protein and gene groups
+[196:59] Calculating global q-values for protein and gene groups
+[196:59] Writing report
+[197:09] Report saved to R:\GlyMass\Menace\Output_DIA-NN\Troubleshooting Runs\Run6_20221109\report.tsv.
+[197:09] Saving precursor levels matrix
+[197:10] Precursor levels matrix (1% precursor and protein group FDR) saved to R:\GlyMass\Menace\Output_DIA-NN\Troubleshooting Runs\Run6_20221109\report.pr_matrix.tsv.
+[197:10] Saving protein group levels matrix
+[197:10] Protein group levels matrix (1% precursor FDR and protein group FDR) saved to R:\GlyMass\Menace\Output_DIA-NN\Troubleshooting Runs\Run6_20221109\report.pg_matrix.tsv.
+[197:10] Saving gene group levels matrix
+[197:10] Gene groups levels matrix (1% precursor FDR and protein group FDR) saved to R:\GlyMass\Menace\Output_DIA-NN\Troubleshooting Runs\Run6_20221109\report.gg_matrix.tsv.
+[197:10] Saving unique genes levels matrix
+[197:10] Unique genes levels matrix (1% precursor FDR and protein group FDR) saved to R:\GlyMass\Menace\Output_DIA-NN\Troubleshooting Runs\Run6_20221109\report.unique_genes_matrix.tsv.
+[197:10] Stats report saved to R:\GlyMass\Menace\Output_DIA-NN\Troubleshooting Runs\Run6_20221109\report.stats.tsv
+[197:10] Generating spectral library:
+[197:10] 14354 precursors passing the FDR threshold are to be extracted
+[197:10] Loading run R:\GlyMass\Menace\PXD02660_Raws\RD139_Raw_files_DIA_Narrow\RD139_Narrow_UPS1_25fmol_inj1.raw
+[198:14] 5142120 library precursors are potentially detectable
+[198:16] 11157 spectra added to the library
+[198:17] Saving spectral library to R:\GlyMass\Menace\Output_DIA-NN\Troubleshooting Runs\Run6_20221109\lib\lib.tsv
+[198:38] 14354 precursors saved
+[198:38] Loading the generated library and saving it in the .speclib format
+[198:38] Loading spectral library R:\GlyMass\Menace\Output_DIA-NN\Troubleshooting Runs\Run6_20221109\lib\lib.tsv
+[198:40] Spectral library loaded: 2074 protein isoforms, 2080 protein groups and 14354 precursors in 11140 elution groups.
+[198:40] Loading protein annotations from FASTA R:\GlyMass\Menace\FASTAs\shortstuff.fasta
+[198:40] Loading protein annotations from FASTA R:\GlyMass\Menace\FASTAs\UP000000625_83333.fasta
+[198:41] Gene names missing for some isoforms
+[198:41] Library contains 2073 proteins, and 2073 genes
+[198:41] Saving the library to R:\GlyMass\Menace\Output_DIA-NN\Troubleshooting Runs\Run6_20221109\lib\lib.tsv.speclib
+
+Finished
+
