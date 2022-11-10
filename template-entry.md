@@ -6,13 +6,13 @@ GitRepo:MenaceGallagher/lab-book
 # Title
 
 <!--Dataset Info-->
--ProgramName:	XXXX<br />
--ProgramVer:		XXXX.0.1<br />
--Dataset:		Dataset Name Here<br />
--RAWs:			XXXX.raw<br />
--FASTA:			XXXX.fasta, XXXX.fasta<br />
--SPECLIB:		Generated from FASTA<br />
--LOG:			([./log/XXXX.log.txt])<br />
+- ProgramName:	XXXX<br />
+- ProgramVer:		XXXX.0.1<br />
+- Dataset:		Dataset Name Here<br />
+- RAWs:			XXXX.raw<br />
+- FASTA:			XXXX.fasta, XXXX.fasta<br />
+- SPECLIB:		Generated from FASTA<br />
+- LOG:			([./log/XXXX.log.txt])<br />
 
 
 <!--Reporting-->
