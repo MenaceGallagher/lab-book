@@ -1,8 +1,8 @@
-<--
+<!--
 Document Owner:Menace Gallagher
 GitRepo:MenaceGallagher/lab-book
 -->
-<--Title-->#
+<!--Title-->#
 ProgramName:
 ProgramVer:
 Dataset:
@@ -11,16 +11,16 @@ FASTA:
 SPECLIB:
 LOG:			([./log/XXXX.log.txt])
 
-<summary><details>Rationale</summary><p>
+<details><summary>##Rationale</summary><p>
 
 </p></details>
 
-<summary><details>Observations</summary><p>
+<details><summary>##Observations</summary><p>
 
 </p></details>
 
 
-<summary><details>Further Investigation</summary><p>
+<details><summary>##Further Investigation</summary><p>
 
 </p></details>
 
